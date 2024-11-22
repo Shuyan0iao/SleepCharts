@@ -76,6 +76,8 @@ export const monthData = [
         stacks: [
             { value: 7, color: '#C7985A', marginBottom: 2 },
         ],
+        label: '1',
+        labelWidth: 30,
 
     },
     {
@@ -90,6 +92,7 @@ export const monthData = [
             { value: 0.2, color: '#1E6EF3', marginBottom: 0.1 },
             { value: 0.2, color: '#C7985A' },
         ],
+        
     },
     {
         stacks: [
@@ -115,6 +118,8 @@ export const monthData = [
             { value: 2, color: '#C7985A' },
             { value: 2, color: '#1E6EF3' },
         ],
+        label: '2',
+        labelWidth: 30,
 
     },
     {
@@ -149,6 +154,8 @@ export const monthData = [
             { value: 2, color: '#C7985A' },
             { value: 2, color: '#1E6EF3' },
         ],
+        label: '3',
+        labelWidth: 30,
     },
     {
         stacks: [
@@ -181,6 +188,8 @@ export const monthData = [
             { value: 0.2, color: '#1E6EF3', marginBottom: 0.1 },
             { value: 0.2, color: '#C7985A' },
         ],
+        label: '4',
+        labelWidth: 30,
     },
     {
         stacks: [
@@ -223,6 +232,8 @@ export const monthData = [
             { value: 8, color: '#C7985A', marginBottom: 1 },
             { value: 0.2, color: '#1E6EF3', marginBottom: 2 },
         ],
+        label: '5',
+        labelWidth: 30,
 
     },
 ];

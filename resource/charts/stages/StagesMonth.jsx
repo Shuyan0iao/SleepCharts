@@ -23,11 +23,11 @@ export default function StagesWeek() {
                 height={chartHeight}
                 thickness={2}
                 spacing={3}
-                xAxisLabelTexts={['', '', '1', '', '', '', '', '5', '', '', '', '', '10', '', '', '', '', '15', '',]}
+
                 initialSpacing={10}
 
                 xAxisLabelTextStyle={{
-                    fontSize: 8,
+                    fontSize: 12,
                     color: 'grey',
                 }}
                 yAxisTextStyle={{
