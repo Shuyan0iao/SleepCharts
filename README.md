@@ -1,18 +1,23 @@
-## 演示视频
+## Demo Video
+<video width="600" controls>
+    <source src="https://private-user-images.githubusercontent.com/145051161/389100081-440bfd48-fcd4-4e1e-80e5-aa9b6f0de2c9.mov" type="video/mp4">
+    not support
+</video>
 
 ---
-## 文件说明
-- **`resource/`**: 
-  - **`Sleep.jsx`**: 睡眠页面主组件
-  - **`SelectDropdown.jsx`**: 用于切换不同展示视图的下拉选择器。
-  - **`SleepSummary.jsx`**: 用于展示睡眠统计数据的组件。
 
+## File Description
+
+- **`resource/`**:
+  - **`Sleep.jsx`**: Main component for the Sleep page.
+  - **`SelectDropdown.jsx`**: Dropdown selector for switching between different views.
+  - **`SleepSummary.jsx`**: Component for displaying sleep summary statistics.
 
 - **`resource/charts/`**:
-  - **`stages/`**: 展示 "Stages" 图表的相关组件, 包括不同时间范围（天、周、月）。
-  - **`amounts/`**: 展示 "Amounts" 图表的相关组件。
-  - **`comparisons/`**: 展示 "Comparisons" 图表的相关组件。
-  - **`Charts.jsx`**: 图表的主入口文件。
-  - **`data/`**: 数据文件夹，包含图表所需的静态数据。
+  - **`stages/`**: Components related to the "Stages" chart, including different time ranges (day, week, month).
+  - **`amounts/`**: Components related to the "Amounts" chart.
+  - **`comparisons/`**: Components related to the "Comparisons" chart.
+  - **`Charts.jsx`**: Main entry file for charts.
+  - **`data/`**: Data folder containing static data required for the charts.
 
 ---
