@@ -43,6 +43,13 @@ export default function StagesWeek() {
                 yAxisLabelSuffix=" AM"
                 hideRules={true}
                 hideDataPoints={true}
+                // vertical Lines
+                showVerticalLines={true}
+                noOfVerticalLines={Math.floor(rawStackData.length / 4)}
+                verticalLinesSpacing={350 / Math.floor(rawStackData.length) * 4}
+                verticalLinesStrokeDashArray={[3,10]}
+                verticalLinesColor={'gray'}
+               
             />
         </View>
     );

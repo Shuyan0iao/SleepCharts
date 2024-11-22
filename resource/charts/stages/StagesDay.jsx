@@ -22,13 +22,15 @@ export default function StagesDay() {
         yAxisThickness={2}
         xAxisThickness={2}
         xAxisLabelTextStyle={{
-          fontSize: 10,
+          fontSize: 14,
           color: 'grey',
+          width: 80,
         }}
         yAxisTextStyle={{
           fontSize: 12,
           color: 'grey',
         }}
+
         xAxisColor="lightgray"
         yAxisColor="lightgray"
         hideRules={true}
@@ -38,6 +40,7 @@ export default function StagesDay() {
         stepValue={1}
         noOfSections={4}
         overflowBottom={10}
+      
         lineGradient
         lineGradientId="gradient"
         lineGradientComponent={() => {
