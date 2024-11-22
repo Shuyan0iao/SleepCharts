@@ -1,13 +1,9 @@
 ## Demo Video
-<video width="600" controls>
-    <source src="https://private-user-images.githubusercontent.com/145051161/389100081-440bfd48-fcd4-4e1e-80e5-aa9b6f0de2c9.mov" type="video/mp4">
-    not support
-</video>
 
----
+![ScreenRecording2024-11-22at12 44 23PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/cd368cf3-24a4-4da4-bff1-f0f0e8e3c82d)
+
 
 ## File Description
-
 - **`resource/`**:
   - **`Sleep.jsx`**: Main component for the Sleep page.
   - **`SelectDropdown.jsx`**: Dropdown selector for switching between different views.
@@ -20,4 +16,5 @@
   - **`Charts.jsx`**: Main entry file for charts.
   - **`data/`**: Data folder containing static data required for the charts.
 
----
+## Potential Issues
+The BarChart component in Gifted Charts does not natively support setting specific x-coordinates for each bar. Instead, it automatically calculates the horizontal positions of bars based on initialSpacing and spacing. This can lead to poor visual results on the x-axis when dealing with grouped data. 
