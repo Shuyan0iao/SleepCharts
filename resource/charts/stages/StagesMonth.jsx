@@ -1,20 +1,20 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { BarChart } from "react-native-gifted-charts";
-import { monthData as rawStackData} from '../data/stagesData';
+import { monthData as rawStackData } from '../data/stagesData';
 export default function StagesWeek() {
-    const chartHeight = 200; 
+    const chartHeight = 200;
     const noOfSections = 8;
     const pixelPerValue = chartHeight / noOfSections;
     const stackData = rawStackData.map((data) => ({
-      ...data,
-      stacks: data.stacks.map((stack) => ({
-        ...stack,
-        marginBottom: stack.marginBottom ? stack.marginBottom * pixelPerValue : undefined,
-      })),
+        ...data,
+        stacks: data.stacks.map((stack) => ({
+            ...stack,
+            marginBottom: stack.marginBottom ? stack.marginBottom * pixelPerValue : undefined,
+        })),
     }));
-    
-    
+
+
     return (
         <View>
             <BarChart
@@ -23,9 +23,9 @@ export default function StagesWeek() {
                 height={chartHeight}
                 thickness={2}
                 spacing={3}
-                xAxisLabelTexts={['', '', '1', '', '', '', '', '5', '', '', '', '', '10','', '','', '','15', '',]} 
+                xAxisLabelTexts={['', '', '1', '', '', '', '', '5', '', '', '', '', '10', '', '', '', '', '15', '',]}
                 initialSpacing={10}
-          
+
                 xAxisLabelTextStyle={{
                     fontSize: 8,
                     color: 'grey',
@@ -38,7 +38,7 @@ export default function StagesWeek() {
                 yAxisColor="lightgray"
                 barWidth={10}
                 noOfSections={noOfSections}
-                maxValue={8} 
+                maxValue={8}
                 yAxisLabelPrefix=""
                 yAxisLabelSuffix=" AM"
                 hideRules={true}

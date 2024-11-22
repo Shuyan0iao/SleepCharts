@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import StagesDay from './Stages/StagesDay';
-import StagesWeek from './Stages/StagesWeek';
-import StagesMonth from './Stages/StagesMonth';
+import StagesDay from './stages/StagesDay';
+import StagesWeek from './stages/StagesWeek';
+import StagesMonth from './stages/StagesMonth';
 import Amounts from './amounts/Amounts';
 import Comparisons from './comparisons/Comparisons';
 
 export default function Charts({ selectedView, selectedType }) {
 
   const renderSelectedView = () => {
-    if (selectedType === 'Stages'){
+    if (selectedType === 'Stages') {
       if (selectedView === 'Day') {
         return <StagesDay />;
       } else if (selectedView === 'Week') {

@@ -10,23 +10,23 @@ export default function Amounts() {
             label: 'Time in Bed',
         },
         {
-            value: 5, 
-            frontColor: '#D2691E', 
+            value: 5,
+            frontColor: '#D2691E',
             label: 'Time Asleep',
         },
     ];
 
-    const yAxisLabelTexts = ['7 AM', '5 AM','3 AM','1 AM', '11 PM', '9 PM'];
+    const yAxisLabelTexts = ['7 AM', '5 AM', '3 AM', '1 AM', '11 PM', '9 PM'];
 
     return (
         <View>
             <BarChart
                 data={barData}
                 width={300}
-                height={200} 
-                barWidth={50} 
+                height={200}
+                barWidth={50}
                 spacing={50}
-                noOfSections={5} 
+                noOfSections={5}
                 maxValue={5}
                 yAxisLabelTexts={yAxisLabelTexts}
                 yAxisTextStyle={{

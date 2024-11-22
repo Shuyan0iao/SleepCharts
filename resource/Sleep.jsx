@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView,  ScrollView } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
 import SleepSummary from './SleepSummary';
 import Charts from './charts/Charts';
-import { Picker } from '@react-native-picker/picker';
+
 import SelectDropdown from './SelectDropdown';
 
 export default function Sleep() {
   const [selectedView, setSelectedView] = useState('Day');
   const [selectedType, setSelectedType] = useState('Stages');
-  const options = ['Day', 'Week', 'Month']; 
-  const types = ['Stages','Amounts', 'Comparisons'];
+  const options = ['Day', 'Week', 'Month'];
+  const types = ['Stages', 'Amounts', 'Comparisons'];
   const handleSelection = (option) => {
     setSelectedView(option);
   };
@@ -18,32 +18,32 @@ export default function Sleep() {
   }
   return (
     <SafeAreaView style={styles.safeContainer}>
-        <ScrollView style={styles.container}>
-      <View style={styles.container}>
-        {/* Header Section */}
-        <View style={styles.header}>
-          <Text style={styles.title}>Sleep</Text>
-          <View style={styles.timeInfo}>
-            <View style={styles.timeBox}>
-              <Text style={styles.timeTitle}>Time in Bed</Text>
-              <Text style={styles.timeValue}>7 hr 41 min</Text>
-            </View>
-            <View style={styles.timeBox}>
-              <Text style={styles.timeTitle}>Time Asleep</Text>
-              <Text style={styles.timeValue}>7 hr 26 min</Text>
+      <ScrollView style={styles.container}>
+        <View style={styles.container}>
+          {/* Header Section */}
+          <View style={styles.header}>
+            <Text style={styles.title}>Sleep</Text>
+            <View style={styles.timeInfo}>
+              <View style={styles.timeBox}>
+                <Text style={styles.timeTitle}>Time in Bed</Text>
+                <Text style={styles.timeValue}>7 hr 41 min</Text>
+              </View>
+              <View style={styles.timeBox}>
+                <Text style={styles.timeTitle}>Time Asleep</Text>
+                <Text style={styles.timeValue}>7 hr 26 min</Text>
+              </View>
             </View>
           </View>
+          {/* Dropdown Section */}
+          <View style={styles.dropdownContainer}>
+            <SelectDropdown options={types} onSelect={handleSelection2} placeholder={types[0]} />
+            <SelectDropdown options={options} onSelect={handleSelection} placeholder={options[0]} />
+          </View>
+          {/* Charts Section */}
+          <Charts selectedView={selectedView} selectedType={selectedType} />
+          {/* Sleep Summary Section */}
+          <SleepSummary />
         </View>
-        {/* Dropdown Section */}
-        <View style={styles.dropdownContainer}>
-          <SelectDropdown options={types} onSelect={handleSelection2} placeholder = {types[0]} />
-          <SelectDropdown options={options} onSelect={handleSelection} placeholder = {options[0]} />
-        </View>
-        {/* Charts Section */}
-        <Charts selectedView={selectedView} selectedType={selectedType}/>
-        {/* Sleep Summary Section */}
-        <SleepSummary />
-      </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -85,9 +85,9 @@ const styles = StyleSheet.create({
   dropdownContainer: {
     marginHorizontal: 16,
     marginVertical: 10,
-    zIndex: 10, 
-    flexDirection: 'row', 
-    justifyContent: 'space-between', 
+    zIndex: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   pickerContainer: {
     marginHorizontal: 16,

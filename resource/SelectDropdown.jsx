@@ -59,13 +59,13 @@ const styles = StyleSheet.create({
   },
   dropdownMenu: {
     position: 'absolute',
-    top: 50, 
-    width: width * 0.9, 
+    top: 50,
+    width: width * 0.9,
     backgroundColor: '#fff',
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    maxHeight: 200, 
+    maxHeight: 200,
     zIndex: 2,
   },
   option: {

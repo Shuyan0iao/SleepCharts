@@ -10,7 +10,6 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-native-picker/picker": "^2.9.0",
     "expo": "~52.0.9",
     "expo-linear-gradient": "~14.0.1",
     "expo-status-bar": "~2.0.0",

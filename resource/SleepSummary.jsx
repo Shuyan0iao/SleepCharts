@@ -1,78 +1,78 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const SleepSummary = () => {
   return (
     <View style={styles.container}>
       {/* Sleep Summary Section */}
 
-        <Text style={styles.sectionTitle}>Sleep Summary</Text>
+      <Text style={styles.sectionTitle}>Sleep Summary</Text>
 
-        {/* First Row */}
-        <View style={styles.row}>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Awake</Text>
-            <Text style={styles.cardValue}>
-              1h 30m <Text style={styles.redText}>(17%)</Text>
-            </Text>
-          </View>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. REM</Text>
-            <Text style={styles.cardValue}>
-              0h 55m <Text style={styles.redText}>(17%)</Text>
-            </Text>
-          </View>
+      {/* First Row */}
+      <View style={styles.row}>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Awake</Text>
+          <Text style={styles.cardValue}>
+            1h 30m <Text style={styles.redText}>(17%)</Text>
+          </Text>
         </View>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. REM</Text>
+          <Text style={styles.cardValue}>
+            0h 55m <Text style={styles.redText}>(17%)</Text>
+          </Text>
+        </View>
+      </View>
 
-        {/* Second Row */}
-        <View style={styles.row}>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Core</Text>
-            <Text style={styles.cardValue}>
-              6h 14m <Text style={styles.blueText}>(72%)</Text>
-            </Text>
-          </View>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Deep</Text>
-            <Text style={styles.cardValue}>N/A</Text>
-          </View>
+      {/* Second Row */}
+      <View style={styles.row}>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Core</Text>
+          <Text style={styles.cardValue}>
+            6h 14m <Text style={styles.blueText}>(72%)</Text>
+          </Text>
         </View>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Deep</Text>
+          <Text style={styles.cardValue}>N/A</Text>
+        </View>
+      </View>
 
-        {/* Third Row */}
-        <View style={styles.row}>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Time in Bed</Text>
-            <Text style={styles.cardValue}>7 hr 41 min</Text>
-          </View>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Time Asleep</Text>
-            <Text style={styles.cardValue}>7 hr 26 min</Text>
-          </View>
+      {/* Third Row */}
+      <View style={styles.row}>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Time in Bed</Text>
+          <Text style={styles.cardValue}>7 hr 41 min</Text>
         </View>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Time Asleep</Text>
+          <Text style={styles.cardValue}>7 hr 26 min</Text>
+        </View>
+      </View>
 
-        {/* Fourth Row */}
-        <View style={styles.row}>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Sleep Goal</Text>
-            <Text style={styles.cardValue}>8 hrs</Text>
-          </View>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Hypnogram</Text>
-            <Text style={styles.cardValue}>90 - 120 min</Text>
-          </View>
+      {/* Fourth Row */}
+      <View style={styles.row}>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Sleep Goal</Text>
+          <Text style={styles.cardValue}>8 hrs</Text>
         </View>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Hypnogram</Text>
+          <Text style={styles.cardValue}>90 - 120 min</Text>
+        </View>
+      </View>
 
-        {/* Fifth Row */}
-        <View style={styles.row}>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Heart Rate</Text>
-            <Text style={styles.cardValue}>59 - 84 bpm</Text>
-          </View>
-          <View style={styles.card}>
-            <Text style={styles.cardLabel}>Avg. Respiratory Rate</Text>
-            <Text style={styles.cardValue}>12.5 - 16.5 breaths/min</Text>
-          </View>
+      {/* Fifth Row */}
+      <View style={styles.row}>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Heart Rate</Text>
+          <Text style={styles.cardValue}>59 - 84 bpm</Text>
         </View>
+        <View style={styles.card}>
+          <Text style={styles.cardLabel}>Avg. Respiratory Rate</Text>
+          <Text style={styles.cardValue}>12.5 - 16.5 breaths/min</Text>
+        </View>
+      </View>
     </View>
   );
 };

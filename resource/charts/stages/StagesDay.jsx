@@ -12,8 +12,8 @@ export default function StagesDay() {
       <LineChart
         data={dayData}
         yAxisLabelTexts={stages}
-        stepChart={true} 
-        
+        stepChart={true}
+
         width={350}
         height={200}
         thickness={2}
