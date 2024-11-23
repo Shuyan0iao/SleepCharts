@@ -9,11 +9,14 @@ export default function CompHeart() {
             stackData={heartData}
             width={300}
             height={100}
+            // Bar
+            spacing={10}
+            barWidth={12}
+            barBorderRadius={6}
+            // Axis
             noOfSections={2}
             maxValue={100}
-            barWidth={12}
-            spacing={10}
-            initialSpacing={15}
+            initialSpacing={30}
             yAxisLabelTextStyle={{
                 fontSize: 10,
                 color: 'gray',
@@ -21,16 +24,12 @@ export default function CompHeart() {
             xAxisLabelTextStyle={{
                 fontSize: 12,
                 color: 'gray',
+                width: 40,
             }}
-
-            rulesThickness={1}
-            yAxisSide={yAxisSides.RIGHT}
-            barBorderRadius={6}
+            xAxisLabelTexts={['8 PM', '', '', '11 PM', '', '', '2 AM', '', '', '5AM', '', '']}
             yAxisColor="lightgray"
             xAxisColor="lightgray"
-            xAxisLabelTexts={['8 PM', '', '', '11 PM', '', '', '2 AM', '', '', '5AM', '', '']}
-            xAxisLabelsHeight={20}
-            xAxisLabelsVerticalShift={5}
+            yAxisSide={yAxisSides.RIGHT}
         />
     );
 }

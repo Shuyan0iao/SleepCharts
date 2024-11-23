@@ -8,19 +8,20 @@ export default function StagesDay() {
   const stages = ['Deep', 'Core', 'REM', 'Awake'];
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View>
       <LineChart
         data={dayData}
-        yAxisLabelTexts={stages}
         stepChart={true}
-
         width={350}
         height={200}
-        thickness={2}
+        // Bar
         spacing={30}
+        // Axis
+        noOfSections={4}
+        maxValue={3}
+        stepValue={1}
         initialSpacing={20}
-        yAxisThickness={2}
-        xAxisThickness={2}
+        yAxisLabelTexts={stages}
         xAxisLabelTextStyle={{
           fontSize: 14,
           color: 'grey',
@@ -30,17 +31,13 @@ export default function StagesDay() {
           fontSize: 12,
           color: 'grey',
         }}
-
         xAxisColor="lightgray"
         yAxisColor="lightgray"
+        // Rules  
+        thickness={2}
         hideRules={true}
         hideDataPoints={true}
-
-        maxValue={3}
-        stepValue={1}
-        noOfSections={4}
-        overflowBottom={10}
-      
+        // Line Gradient
         lineGradient
         lineGradientId="gradient"
         lineGradientComponent={() => {

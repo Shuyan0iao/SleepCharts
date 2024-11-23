@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { BarChart } from "react-native-gifted-charts";
 import { monthData as rawStackData } from '../data/stagesData';
+
 export default function StagesWeek() {
     const chartHeight = 200;
     const noOfSections = 8;
@@ -22,18 +23,14 @@ export default function StagesWeek() {
                 width={350}
                 height={chartHeight}
                 // Bar
-                thickness={2}
                 spacing={3}
-                barWidth={10}
+                barWidth={10}        
+                // Axis
                 noOfSections={noOfSections}
                 maxValue={8}
-                // Axis
-                hideRules={true}
-                hideDataPoints={true}
-                initialSpacing={10}
                 xAxisLabelTextStyle={{
                     fontSize: 12,
-                    color: 'grey',
+                    color: 'grey', 
                 }}
                 yAxisTextStyle={{
                     fontSize: 12,
@@ -43,13 +40,16 @@ export default function StagesWeek() {
                 yAxisColor="lightgray"
                 yAxisLabelPrefix=""
                 yAxisLabelSuffix=" AM"
-                // vertical Lines
+                // Rules
+                thickness={2}
+                hideRules={true}
+                hideDataPoints={true}
+                // Vertical line
                 showVerticalLines={true}
                 noOfVerticalLines={Math.floor(rawStackData.length / 4)}
                 verticalLinesSpacing={350 / Math.floor(rawStackData.length) * 4}
                 verticalLinesStrokeDashArray={[3,10]}
                 verticalLinesColor={'gray'}
-               
             />
         </View>
     );

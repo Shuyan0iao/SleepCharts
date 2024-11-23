@@ -8,19 +8,16 @@ export default function CompSleep() {
             stackData={sleepData}
             width={300}
             height={100}
+            // Bar
             spacing={0}
             barWidth={30}
-
+            // Axis
             noOfSections={2}
             initialSpacing={20}
             xAxisColor="lightgray"
             yAxisColor="lightgray"
-            
-            yAxisThickness={1}
-            xAxisThickness={1}
             hideYAxisText={true}
-
-
+            // Vertical line
             showVerticalLines={true}
             noOfVerticalLines={3}
             verticalLinesSpacing={100}
