@@ -1,15 +1,42 @@
 
-const defaultvlue = 200;
+const defaultvlue = 20;
 export const sleepData = [
-    { value: defaultvlue, frontColor: '#C7985A' },
-    { value: defaultvlue, frontColor: '#C7985A' },
-    { value: defaultvlue, frontColor: '#C7985A' },
-    { value: defaultvlue, frontColor: '#C7985A' },
-    { value: defaultvlue, frontColor: '#C7985A' },
-    { value: defaultvlue, frontColor: '#FF4B55' },
-    { value: defaultvlue, frontColor: '#1E6EF3' },
-    { value: defaultvlue, frontColor: '#1E6EF3' },
-    { value: defaultvlue, frontColor: '#1E6EF3' },
+    {         
+        stacks: [
+        { value: 10, color: 'transparent' },
+        { value: defaultvlue, color: '#C7985A' },
+        ],
+    },
+    {         
+        stacks: [
+        { value: 10, color: 'transparent' },
+        { value: defaultvlue, color: '#C7985A' },
+        ],
+    },
+    {         
+        stacks: [
+        { value: 10, color: 'transparent' },
+        { value: defaultvlue, color: '#C7985A' },
+        ],
+    },
+    {         
+        stacks: [
+        { value: 10, color: 'transparent' },
+        { value: defaultvlue, color: '#FF4B55' },
+        ],
+    },
+    {         
+        stacks: [
+        { value: 10, color: 'transparent' },
+        { value: defaultvlue, color: '#1E6EF3' },
+        ],
+    },
+    {         
+        stacks: [
+        { value: 10, color: 'transparent' },
+        { value: defaultvlue, color: '#1E6EF3' },
+        ],
+    },
 ];
 
 export const heartData = [

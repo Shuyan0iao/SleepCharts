@@ -7,7 +7,7 @@ export default function CompHeart() {
     return (
         <BarChart
             stackData={heartData}
-            width={350}
+            width={300}
             height={100}
             noOfSections={2}
             maxValue={100}
@@ -24,8 +24,7 @@ export default function CompHeart() {
             }}
 
             rulesThickness={1}
-            /* yAxisSide and yAxisSides do not work */
-            // yAxisSide="right"
+            yAxisSide={yAxisSides.RIGHT}
             barBorderRadius={6}
             yAxisColor="lightgray"
             xAxisColor="lightgray"

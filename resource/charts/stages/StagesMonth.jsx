@@ -21,11 +21,16 @@ export default function StagesWeek() {
                 stackData={stackData}
                 width={350}
                 height={chartHeight}
+                // Bar
                 thickness={2}
                 spacing={3}
-
+                barWidth={10}
+                noOfSections={noOfSections}
+                maxValue={8}
+                // Axis
+                hideRules={true}
+                hideDataPoints={true}
                 initialSpacing={10}
-
                 xAxisLabelTextStyle={{
                     fontSize: 12,
                     color: 'grey',
@@ -36,13 +41,8 @@ export default function StagesWeek() {
                 }}
                 xAxisColor="lightgray"
                 yAxisColor="lightgray"
-                barWidth={10}
-                noOfSections={noOfSections}
-                maxValue={8}
                 yAxisLabelPrefix=""
                 yAxisLabelSuffix=" AM"
-                hideRules={true}
-                hideDataPoints={true}
                 // vertical Lines
                 showVerticalLines={true}
                 noOfVerticalLines={Math.floor(rawStackData.length / 4)}
