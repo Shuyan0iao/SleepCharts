@@ -1,5 +1,5 @@
 ## Demo Video
-![ScreenRecording2024-11-22at4 39 08PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d45c30bf-24c9-496d-b2d5-3696c3e0ed1e)
+![ScreenRecording2024-11-22at4 39 08PM-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/b8d55c92-43c2-4a0e-a7b5-697b1b52d99b)
 
 ## File Description
 - **`resource/`**:
